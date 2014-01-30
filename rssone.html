@@ -1,0 +1,712 @@
+<html lang=pl> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta charset=UTF-8> 
+	<title>RSS one</title> 
+	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACRv/kAGXj3ALTU+ACFqeUAMJv8AC6f/wAXifQAmb7/AJvA/AD4+/8AhLPxAPn/+QDB2fUA+f7/APr+/wD7/v8A///5AP/7/wD9/v8AXLr1AP/+/wCfmZIAxcTAAF++7wDa2NcAFnT1AB9y5gCQwPQASqn5ACqa+gDS4fsArtr5ACZ58gDV7v4AncX6ANro/gBNvf8A+/39AP39/QD//f0ALIb1ACiR8gAwiu8AK5v1AE6h/QAumPUAlMfvANPl/wDV5vkAOZP4ANPr/wAeiPMA3ej2AJ3I+wD7//sAwdr6ABRu5QAZbtwA///7AJqZnQAXct8A4+7/AOvs8ABbwPcAG3fcAHKp+gCSt/8A1ObxADqW5wB+resAs9f7AHqt/QAwo/MAMqPzACJ/9ADZ5/0A2en6APv69gD6+/kA+v3/AP/3/wD/+fwA//r/ACaI9AD+/f8A//3/AP///AAsk/oATKr2AM/h/gA0megANJH0AC2h7gCy1fYASa3/AE+x+QAag/gA9fv6ACJ7+wDb6PgAiKvvAP/69wAkh/sAT4/uAFi/9gAxhfUAMY71AM7m/AD19PgAM57vAC6h+ADS5/8AMKH4APb//gD7//UA+P/+ANzq/wD5//4A3er/AP38/gBYwfQA///+AMnf8QCHvP8AL4j2ACOY+QApkvkA6vP/AI+8/wDv9v8AlsL/AB5/9wC22fsAz9HRADWa/wDz/P8A2ur3APb//wD9//YA//v8APv//wBaufgA//z/AP3//wDC2v4A////AMfc+wAtlegAjYmEAM/g9QCt0PwA6vX9AMrm/gDM5v4A3eLgADGg7gDz9f0AM5j6ANXn+AC32PkApquqACOE7ACkv/cAIInyAB6M8gDb6/sA2+34AFW49gBXsv8AWLL/ACqA8gAlh/UA///3AP/9+gD//v0AVrv/AB1x4QArkvIAiMD7ALW0qgCRvfIASaf6ALfL7gBMrfEAMpH4AJfB7ACZw/IAeKz/ANHp/wD29/sA1Oz/ACJ8+QCFfX0AZqL0AEmR7wD9//gA///4AM3d7gCMiokAyMvCACOm8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl6W8TEuBj3mMrg+IdCMhf4t/MplZrD2eLy/Eb5h2vncROmNrN8WSMJwMkHpDpo7ECWyahRagO8bAlBWzxxg+ZcRVRURAOTgDtho8sFpkOq2Oe15mASVHKiBnjMGjWEJVHyyrqkqVUVKMFFQZaQa1n79XYBACKIPCQXyhu4cKsWJGHDOWro40IjUeYRAJU7eEVrpffrhdUAtOkb1bK6kAeQlVCBMdMZNqpCktfY20jHVyjhSAF5tuXJ3Ihq8bjA+KFHHDT4J4SUhwBCSyOg4mxJGRkZERLmgFbT+iJ5GRkZGRkZGRxBG5qKcHc4+RkZGRkZGRkVWJFDZNDRJykZGRkQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" />
+	<meta http-equiv="Content-Language" content="pl"/> 
+	<meta name="description" content="rwd">
+	<meta name="content" content="rwd">
+	<meta name="author" content="rwd">	
+	
+<style>
+body {background:#258;color: #000; font: normal 15px Arial, Helvetica, sans-serif;	max-width: 98%;	margin: 0 auto;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+a {color: #69C;	text-decoration: none;}
+a:hover {color: #F60;}
+h1 {font: 1.7em;line-height: 110%;color: #000;}
+h1, h2, h3 {color: #000;}
+h4 {border:none; padding:0;margin:0; color:#000;}
+p {	margin: 0 0 20px;}
+#pagewrap {max-width: 98%;margin: 0 auto;}
+.wrapper {overflow: hidden;}
+#menu {padding:5px 0;}
+div.arty {}
+div.art {padding:1.5% 3%; min-height:50px;}
+a.title {color:#258; font-size:102%; font-weight:bold; margin-top:2%;}
+div.art:nth-child(2n) {background-color: #EAEAEA;}
+div.hh1   {font-size:115%; min-height:30px; background:#126; color:white; padding:2% 2% 2% 4%; margin:0; border-top:1px solid black;display: block; float:left; width:94.0%;}
+div.hh1 a   {color:white; float:left;}
+.pull-right {float:right;margin-top:0;}
+.pull-left {float: left;}
+a.active {color:black !important;}
+.czas {cursor:pointer;}
+div.image {max-width:64px; max-height:48px; float:left;  margin-right:4px; display: inline-block;}
+img       {max-width:64px; max-height:48px; padding:0 !important; margin:0 !important;}
+.well     {min-height:48px;}
+#popup {display:none; background:#ddd; border:2px solid #444; padding:2px 10px; position:fixed; top:40px; left:50%; margin-left:-410px; width:800px;  max-width:95%;}
+#popup #popup_body {background:white; padding:10px; min-height:100px;line-height:160%;}
+#popup #popup_header, #popup #popup_footer{font-weight:bold; text-align:right; padding:5px; font-size:110%;}
+#popup_title {float:left; text-align:left; padding-top:5px;}
+div.auto img {max-height:100%; max-width:100%;}
+div.batony {margin:5px;}
+div.constant .btn {min-width:5em;}
+#informacje {color:white;}
+table.traffic {background:#fff; padding:5px; margin-top:5px;border:1px solid gray;}
+table.traffic tr.sectiontableentry2 {background:#f4f4f4;}
+table.traffic tr.sectiontableheader {background:#444; color:#fff;}
+
+
+/************************************************************************************
+COLUMN
+*************************************************************************************/
+.col {background: #fff;padding:0;float: left;margin-left: 3.2%;margin-bottom: 10px;}
+.fullwidth .col {float: none;margin-left: 0;}
+.grid4 .col {width: 22.6%;}
+.grid3 .col {width: 31.2%;}
+.grid2 .col {width: 46.4%;}
+.grid4 .col:nth-of-type(4n+1),
+.grid3 .col:nth-of-type(3n+1),
+.grid2 .col:nth-of-type(2n+1) {margin-left: 0;clear: left;}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+
+/* reset cols to 3-column */
+@media screen and (max-width: 1439px) {
+	.grid4 .col {width: 29.2%;}
+	.grid4 .col:nth-of-type(4n+1) {margin-left: 3.2%;clear: none;}
+	.grid4 .col:nth-of-type(3n+1) {margin-left: 0;clear: left;}
+}
+/* reset cols to 2-column */
+@media screen and (max-width: 1279px) {
+	.grid4 .col {width: 48.4%;}
+	.grid4 .col:nth-of-type(3n+1) {margin-left: 3.2%;clear: none;}
+	.grid4 .col:nth-of-type(2n+1) {margin-left: 0;clear: left;}
+	.grid3 .col {width: 48.4%;}
+	.grid3 .col:nth-of-type(3n+1) {margin-left: 3.2%;clear: none;}
+	.grid3 .col:nth-of-type(2n+1) {margin-left: 0;clear: left;}
+}
+/* reset cols to fullwidth */
+@media screen and (max-width: 799px) {
+	.col {width: 100% !important;margin-left: 0 !important;clear: none !important;}
+	div.art {padding:1% 2%;}
+	#popup{position:fixed;top:40px;left:10px;right:10px;width:auto; margin:0; padding:2px;}
+	#popup #popup_body {padding:0;}
+}
+.btn{margin:3px; display:inline-block;*display:inline;*zoom:1;padding:4px 12px;margin-bottom:0;text-align:center;vertical-align:middle;cursor:pointer;color:#333333;text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);background-color:#f5f5f5;background-image:-moz-linear-gradient(top, #ffffff, #e6e6e6);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));background-image:-webkit-linear-gradient(top, #ffffff, #e6e6e6);background-image:-o-linear-gradient(top, #ffffff, #e6e6e6);background-image:linear-gradient(to bottom, #ffffff, #e6e6e6);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);border-color:#e6e6e6 #e6e6e6 #bfbfbf;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#e6e6e6;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);border:1px solid #bbbbbb;*border:0;border-bottom-color:#a2a2a2;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;*margin-left:.3em;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);}.btn:hover,.btn:active,.btn.active,.btn.disabled,.btn[disabled]{color:#333333;background-color:#e6e6e6;*background-color:#d9d9d9;}
+.btn:active,.btn.active{background-color:#cccccc;}
+.btn-small{font-size:82%; padding:3px 8px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.btn-info{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#49afcd;background-image:-moz-linear-gradient(top, #5bc0de, #2f96b4);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));background-image:-webkit-linear-gradient(top, #5bc0de, #2f96b4);background-image:-o-linear-gradient(top, #5bc0de, #2f96b4);background-image:linear-gradient(to bottom, #5bc0de, #2f96b4);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);border-color:#2f96b4 #2f96b4 #1f6377;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#2f96b4;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-info:hover,.btn-info:active,.btn-info.active,.btn-info.disabled,.btn-info[disabled]{color:#ffffff;background-color:#2f96b4;*background-color:#2a85a0;}
+.btn-info:active,.btn-info.active{background-color:#24748c;}
+.btn-inverse{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#363636;background-image:-moz-linear-gradient(top, #444444, #222222);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));background-image:-webkit-linear-gradient(top, #444444, #222222);background-image:-o-linear-gradient(top, #444444, #222222);background-image:linear-gradient(to bottom, #444444, #222222);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);border-color:#222222 #222222 #000000;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#222222;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-inverse:hover,.btn-inverse:active,.btn-inverse.active,.btn-inverse.disabled,.btn-inverse[disabled]{color:#ffffff;background-color:#222222;*background-color:#151515;}
+.btn-inverse:active,.btn-inverse.active{background-color:#080808;}
+.btn-danger{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#da4f49;background-image:-moz-linear-gradient(top, #ee5f5b, #bd362f);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));background-image:-webkit-linear-gradient(top, #ee5f5b, #bd362f);background-image:-o-linear-gradient(top, #ee5f5b, #bd362f);background-image:linear-gradient(to bottom, #ee5f5b, #bd362f);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);border-color:#bd362f #bd362f #802420;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#bd362f;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-danger:hover,.btn-danger:active,.btn-danger.active,.btn-danger.disabled,.btn-danger[disabled]{color:#ffffff;background-color:#bd362f;*background-color:#a9302a;}
+.btn-danger:active,.btn-danger.active{background-color:#942a25 \9;}
+.btn-primary{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#006dcc;background-image:-moz-linear-gradient(top, #0088cc, #0044cc);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));background-image:-webkit-linear-gradient(top, #0088cc, #0044cc);background-image:-o-linear-gradient(top, #0088cc, #0044cc);background-image:linear-gradient(to bottom, #0088cc, #0044cc);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);border-color:#0044cc #0044cc #002a80;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#0044cc;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-primary:hover,.btn-primary:active,.btn-primary.active,.btn-primary.disabled,.btn-primary[disabled]{color:#ffffff;background-color:#0044cc;*background-color:#003bb3;}
+.btn-primary:active,.btn-primary.active{background-color:#003399 \9;}
+
+
+</style>
+	<!--[if IE]>
+		<link href=ie.css rel=stylesheet />
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<!--script type="text/javascript" src="rss.list.inc.js"></script-->
+
+<script type="text/javascript">
+// [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+rssy=[];
+sekcje=[];
+kolory=[];
+var x=-1; 
+// Szczecin
+x++; rssy[x]=[];	sekcje[x]='Szczecin';	kolory[x]='#369';
+rssy[x].push({title:'Szczecin Gazeta',url:'http://rss.feedsportal.com/c/32739/f/530434/index.rss',limit:10,color:'#FDFDF2'});	
+//rssy[x].push({title:'Szczecin2 Gazeta',url:'http://rss.gazeta.pl/pub/rss/szczecin.xml',limit:10,color:'#FDFDF2'});	
+rssy[x].push({title:'Szczecin Radio',url:'http://www.radioszczecin.pl/rss.php?idp=1',limit:10,color:'#eee'});	
+rssy[x].push({title:'mmSzczecin',url:'http://www.mmszczecin.pl/rss/news.xml',limit:10,color:'#eee'});	
+rssy[x].push({title:'wSzczecinie',url:'http://www.wszczecinie.pl/rss/news.xml',limit:10,color:'#eee'});	
+
+
+
+// Wiadomości
+x++; rssy[x]=[];	sekcje[x]='Wiadomości';	kolory[x]='#8a8';
+rssy[x].push({title:'Gazeta',url:'http://gazeta.pl.feedsportal.com/c/32739/f/592282/index.rss',limit:10,color:'#FDFDF2'});
+rssy[x].push({title:'Wiadomości',url:'http://rss.feedsportal.com/c/32739/f/530355/index.rss',limit:10,color:'#FDFDF2'});
+rssy[x].push({title:'NaTemat',url:'http://natemat.pl/rss/wszystkie',limit:10,color:'#eee'});	
+rssy[x].push({title:'Facebook',url:'http://www.facebook.com/feeds/notifications.php?id=1817860960&viewer=1817860960&key=AWifprYHa4usn0Lf&format=rss20',limit:5});	
+
+
+// infoTech 
+x++; rssy[x]=[];	sekcje[x]='infoTech';	kolory[x]='#fa4';
+rssy[x].push({title:'AntyWeb',url:'http://feeds2.feedburner.com/Antyweb',limit:6,color:'#eee'});	
+rssy[x].push({title:'Technologie',url:'http://rss.feedsportal.com/c/32739/f/516905/index.rss',limit:6,color:'#eee'});
+rssy[x].push({title:'SpiderWeb',url:'http://www.spidersweb.pl/feed',limit:6,color:'#eee'});
+rssy[x].push({title:'Chip',url:'http://www.chip.pl/RSS',limit:10});
+rssy[x].push({title:'Interia-tech' ,url:'http://nt.interia.pl/feed',limit:6,color:'#fff'});	
+rssy[x].push({title:'Nauka' ,url:'http://rss.feedsportal.com/c/32739/f/530269/index.rss',limit:6,color:'#fff'});	
+rssy[x].push({title:'Android',url:'http://android.com.pl/component/bca-rss-syndicator/?feed_id=3',limit:6,color:'#eee'});
+
+
+// Dzone
+x++; rssy[x]=[];	sekcje[x]='Dzone';	kolory[x]='#26f';
+rssy[x].push({title:'Top',url:'http://www.dzone.com/links/feed/frontpage/rss.xml'});	
+rssy[x].push({title:'JavaSript',url:'http://www.dzone.com/links/feed/frontpage/javascript/rss.xml',limit:6,color:'#eee'});	
+rssy[x].push({title:'Frontpage',url:'http://feeds.dzone.com/dzone/frontpage',limit:6,color:'#eee'});	
+rssy[x].push({title:'Html5',url:'http://dzone.com/mz/html5/rss',limit:6,color:'#eee'});	
+rssy[x].push({title:'Queue',url:'http://www.dzone.com/links/feed/queue/rss.xml',limit:6,color:'#eee'});	
+
+
+
+
+// WebDev
+x++; rssy[x]=[];		sekcje[x]='WebDev';	kolory[x]='#88f';
+rssy[x].push({title:'Jqueryrain',url:'http://feeds.feedburner.com/Jqueryrain',limit:6,color:'#eee'});	
+rssy[x].push({title:'html5rocks',url:'http://feeds.feedburner.com/html5rocks',limit:6,color:'#eee'});
+rssy[x].push({title:'Codrops',url:'http://feeds2.feedburner.com/tympanus',limit:6,color:'#eee'});
+rssy[x].push({title:'WDWall',url:'http://feeds2.feedburner.com/WebDesignerWall',limit:6,color:'#eee'});
+rssy[x].push({title:'Smashing',url:'http://rss1.smashingmagazine.com/feed/',limit:6,color:'#eee'});	
+
+
+
+
+// Code
+x++; rssy[x]=[];		sekcje[x]='Code';	kolory[x]='#aaf';
+rssy[x].push({title:'PHPclass'  ,url:'http://feeds.feedburner.com/phpclasses-xml',limit:6,color:'#eef'});	
+rssy[x].push({title:'JSclass'   ,url:'http://feeds.feedburner.com/jsclasses-xml',limit:6,color:'#eef'});	
+rssy[x].push({title:'Mootools'  ,url:'http://mootools.net/forge/feed/recent',limit:6,color:'#eef'});	
+rssy[x].push({title:'CSStricks',url:'http://feeds.feedburner.com/CssTricks',limit:6,color:'#eee'});	
+rssy[x].push({title:'dailyjs',url:'http://feeds.feedburner.com/dailyjs',limit:6,color:'#eee'});	
+
+
+
+// WIZUT
+x++; rssy[x]=[];		sekcje[x]='WIZUT';	kolory[x]='#69b';
+rssy[x].push({title:'Aktualności' ,url:'http://www.wi.zut.edu.pl/aktualnosci?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+rssy[x].push({title:'Ogłoszenia'  ,url:'http://www.wi.zut.edu.pl/ogloszenia?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+rssy[x].push({title:'Plan'        ,url:'http://www.wi.zut.edu.pl/plan-zajec/zmiany-w-planie?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+rssy[x].push({title:'Doktoranci'  ,url:'http://www.wi.zut.edu.pl/doktoranci?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+rssy[x].push({title:'Pracownicy'  ,url:'http://www.wi.zut.edu.pl/pracownicy?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+rssy[x].push({title:'Kandydaci'   ,url:'http://www.wi.zut.edu.pl/kandydaci?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+rssy[x].push({title:'ZUT aktualności' ,url:'http://www.zut.edu.pl/rssfeed/',limit:5,color:'#f8f8da'});	
+rssy[x].push({title:'ZUT studenci' ,url:'http://www.zut.edu.pl/rssfeed-studenci',limit:5,color:'#f8f8da'});	
+rssy[x].push({title:'ZUT pracownicy' ,url:'http://www.zut.edu.pl/rssfeed-pracownicy',limit:5,color:'#f8f8da'});	
+
+
+
+// Portale
+x++; rssy[x]=[];		sekcje[x]='Portale';	kolory[x]='#fff';
+rssy[x].push({title:'Interia' ,url:'http://kanaly.rss.interia.pl/fakty.xml',limit:9,color:'#fff'});	
+rssy[x].push({title:'WP' ,url:'http://wiadomosci.wp.pl/kat,1329,ver,rss,rss.xml',limit:9,color:'#fff'});	
+rssy[x].push({title:'TVN24' ,url:'http://www.tvn24.pl/najnowsze.xml',limit:9,color:'#fff'});	
+rssy[x].push({title:'TOK-FM' ,url:'http://www.tokfm.pl/pub/rss/tokfmpl_glowne.xml',limit:9});	
+rssy[x].push({title:'ŚwiatCzytników' ,url:'http://rss.swiatczytnikow.pl/SwiatCzytnikow',limit:9});	
+rssy[x].push({title:'RadioM' ,url:'http://www.radiomaryja.pl/feed/',limit:9});	
+//rssy[x].push({title:'' ,url:'',limit:9});	
+rssy[x].push({title:'Signs' ,url:'http://www.signs.pl/backend.php?cat=Warsztat',limit:4,color:'#fff'});	
+// onet- starocie
+
+
+// Allegro
+x++; rssy[x]=[];		sekcje[x]='Allegro';	kolory[x]='#dddd22';
+rssy[x].push({title:'Kamadu' ,url:'http://allegro.pl/rss.php/user?uid=3561416',limit:20});	
+rssy[x].push({title:'Nex-3' ,url:'http://allegro.pl/rss.php?feed=search&category=0&change_view=1&distance=1&listing_interval=7&listing_sel=2&location_radio=1&offer_type=0&order=t&pay=0&selected_country=1&shippingTime=0&state=0&string=sony+nex-3+body+-deki%2A&view=gtext',limit:10});	
+rssy[x].push({title:'NEX3-16mm' ,url:'http://allegro.pl/rss.php?feed=search&category=89958&string=16mm',limit:20});	
+rssy[x].push({title:'Led Power' ,url:'http://allegro.pl/rss.php?feed=search&category=67252&string=led+power',limit:10});	
+rssy[x].push({title:'FotoAlbum' ,url:'http://allegro.pl/rss.php?feed=search&category=0&change_view=Poka%C5%BC%C2%A0%3E&distance=1&listing_interval=7&listing_sel=2&offer_type=0&order=t&postcode_enabled=0&price_from=30&price_to=70&state=0&string=%28fotoalbum+fotoksi%C4%85%C5%BCka%29&view=gtext',limit:10});	
+
+
+//rssy[x].push({title:'' ,url:'',limit:9});	
+//rssy[x].push({title:'' ,url:'',limit:9});	
+//rssy[x].push({title:'' ,url:'',limit:9});	
+//rssy[x].push({title:'' ,url:'',limit:9});	
+
+// TEST
+//x++; rssy[x]=[];		sekcje[x]='Test';	kolory[x]='#ff0';
+//rssy[x].push({title:'Aktualności' ,url:'http://www.wi.zut.edu.pl/aktualnosci?format=feed&type=atom',limit:4,color:'#f8f8fa'});	
+
+
+// [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+google.load("feeds", "1");
+
+//var mobile =false;
+var czas=localStorage.getItem('czas');
+var godzin=czas || 24;
+var zamiast=' &nbsp; ...';
+var zamiast='';
+var godzinClass='h'+godzin; if (godzin==9999) godzinClass='h0';
+var last=localStorage.getItem('last');
+var sekcjeuid=[];
+
+
+
+function loadXMLDoc(xurl,myDiv){
+var xmlhttp;
+if   (window.XMLHttpRequest){xmlhttp=new XMLHttpRequest();}
+else {xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+xmlhttp.onreadystatechange=function(){
+if (xmlhttp.readyState==4 && xmlhttp.status==200){
+document.getElementById(myDiv).innerHTML=xmlhttp.responseText;
+}
+}
+xmlhttp.open("GET",xurl,true);
+xmlhttp.send();
+}	
+	function toDate(date,sep){
+		if  (!date) return '';
+		if  (!sep) sep='<br />';
+		
+		var d = new Date(date);
+		var miesiac = d.getMonth()+1;  if (miesiac<10) miesiac = '0'+miesiac;
+		var dzien   = d.getDate();     if (dzien<10)   dzien   = '0'+dzien;
+		var godzina = d.getHours();    if (godzina<10) godzina = '0'+godzina;
+		var minuta  = d.getMinutes();  if (minuta<10)  minuta  = '0'+minuta;
+		//var pldata=d.getFullYear()+':'+miesiac+':'+dzien+'<br />'+godzina+':'+minuta;
+		var pldata=dzien+'-'+miesiac+sep+'<b>'+godzina+':'+minuta+'</b>';
+		return pldata;
+	}	
+	
+	function deltaCzas(date){
+		if  (!date) return '';
+		var teraz = new Date();
+		var kiedy = new Date(date);
+		var mteraz=Date.parse(teraz);
+		var mkiedy=Date.parse(kiedy);			
+		var delta=mteraz-mkiedy;
+		//if (delta<0) console.log(date+' DELTA= '+mteraz+' - '+mkiedy+' = '+delta);
+		delta=Math.round(delta/3600000);
+		return delta; // w godzinach
+	}	
+		
+	function get_uri_param( name ){
+		name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+		var regexS = "[\\?&]"+name+"=([^&#]*)";
+		var regex = new RegExp( regexS );
+		var results = regex.exec( window.location.href );
+		if( results == null )    return 0;
+		else    return results[1];
+	}
+
+	function opisz_menu(id){
+		var html='';
+		var url='rssone.html';
+		for(var i in sekcje) {
+			var v = sekcje[i];
+			var klasa='';
+			if (i==id) klasa=' active';
+			html+='<a href="'+url+'?id='+i+'" id="menu'+i+'" class="btn btn-info'+klasa+'">'+v+'</a> ';
+		}
+		html+='<a href="#" onClick="viewInfo()" class="btn btn-info">Info</a> ';
+		html+='<span id="informacje"></span> ';
+		document.getElementById('menu').innerHTML+=html;
+	}
+
+	function uid(t){
+		var suma=0;
+		for (var i in t) {suma+=t.charCodeAt(i);}
+		return 'id'+suma;	
+	}
+
+	function uidiv(url,i){
+		var uniqueId=uid(url);
+		
+		var el  = document.createElement('article');
+		el.className='col';
+		el.setAttribute("id",uniqueId);
+		feedcontainer.appendChild(el);
+		//document.getElementById('menu'+i).setClass('k'+uniqueId);
+	}
+	
+	function korekta_link(link,content){
+		var agora=link.match(/gazeta|wyborcza/);
+		if (agora){
+			var szukaj_link=content.match(/(<a href.*?>)/gi);
+			if (szukaj_link) {
+				var linkarr=(szukaj_link[1].match(/;link=(.*?)">/));
+				//console.log(linkarr[1])
+				if (linkarr) {
+					link=decodeURIComponent(linkarr[1]);
+					} 
+				link=link.replace(/http:\/\//,'http://m.');  
+				}	
+		//console.log(szukaj_link[1]+"\n");	
+		//console.log(link+"\n");
+		}
+		return link;
+	}
+
+
+	function szukaj_img(link,content){
+		var dzikie_obrazki=content.match(/(dzone|advertisement)/gi);
+		var image='';
+		var szukaj_img=content.match(/(<img.*?>)/gi);
+		if (szukaj_img && szukaj_img[0] && !dzikie_obrazki){
+			var feedburner=szukaj_img[0].match(/(feedburner)/gi) || '';
+			var zut=link.match(/(\/\/zut.)/gi) || '';
+			//console.log(link);
+			//console.log(zut);
+			if (!feedburner) image=szukaj_img[0];
+			//if (zut) image='http://zut.edu.pl/'+image;	
+			if (zut) {
+				image=image.replace('<img src="','<img src="http://zut.edu.pl/');
+				image=image.replace(/width=\"\d\d\d\"/,'');
+				image=image.replace(/height=\"\d\d\d\"/,'');
+				image=image.replace(' alt="">',' />');
+				}
+			//console.log(image);
+		}
+		return image;
+	}
+
+// MAIN	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq
+// MAIN	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq
+// MAIN	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq	qqqqqqqqqqqqqqqqqqq
+	function displayfeed(result){
+		var id = get_uri_param('id');
+		var sekcja=sekcje[id];
+		var title=result.feed.title || 'Portal';
+		
+		if (sekcja!='WIZUT') {var arr=title.split(' '); arr=arr.slice(0,3); title=arr.join(' ');}
+		var uniqueId=uid(result.feed.feedUrl);
+		var el  = document.getElementById(uniqueId);
+
+		var flaga=0;
+		var flag=0;
+		if (!result.error){
+			var rssoutput='';
+			rssoutput+='<div class="hh1"><span class="pull-left">'+title+'</span><span class="pull-right"><a href="#" class="btn btn-info btn-small">&#8657; top</a></span></div>';
+			rssoutput+='<div class="arty">';
+			var thefeeds=result.feed.entries;
+			
+			for (var i=0; i<thefeeds.length; i++) {
+			flag++;
+				var link  = korekta_link(thefeeds[i].link,thefeeds[i].content);
+				var image = szukaj_img(thefeeds[i].link,thefeeds[i].content);
+					
+					// czas 
+					var delta = deltaCzas(thefeeds[i].publishedDate);
+					if (delta>godzin) continue;
+					// ostatnio
+					var rssczas = new Date(thefeeds[i].publishedDate);
+					var teraz=Date.parse(rssczas);
+					if (last>teraz) continue;
+					
+				flaga++;
+				rssoutput+="<div class='art'>";	
+				rssoutput+="<a href='javascript:void(0)' rel-title='" + thefeeds[i].title + "'  rel-link='" + link + "' rel-lokalizacja='"+result.feed.title+"' rel-sekcja='"+sekcja+"' onClick='popup_open(this);'><span class='btn btn-small pull-right czas'>" + toDate(thefeeds[i].publishedDate) + "</span></a>";						
+				rssoutput+="<a href='" + link + "' class='title' title='Internet' target='_blank'>" + thefeeds[i].title + "</a>";
+				rssoutput+="<div class='well'>";		
+					rssoutput+="<div class='image'>"+image+"</div>";		
+					rssoutput+=thefeeds[i].contentSnippet;		
+				rssoutput+="</div>";		
+				rssoutput+="</div>";
+			}
+			//console.log(flag+'='+flaga);
+			rssoutput+="</div>"
+			
+			if (flaga) 	{el.innerHTML+=rssoutput;} 
+			else		{document.getElementById('feeddiv').removeChild(el);}
+		}
+		else alert("Error fetching feeds!")
+	}
+	
+	
+	function rssfeedsetup(id){
+		for(var i in rssy[id]) {
+			var v = rssy[id][i].url;
+			var j=parseInt(i)+1;
+			uidiv(v,j);
+			var feedpointer=new google.feeds.Feed(v);
+			feedpointer.setNumEntries(feedlimit);
+			feedpointer.load(displayfeed);
+		}
+
+	}
+		
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	var feedcontainer='';
+	var feedlimit=8;
+	var x=0;
+	
+
+	function ustawCzas(ten){
+		console.log(ten.rel);
+		console.log(ten.id);
+		document.getElementById(ten.id).style.color="red";
+		var czas=ten.rel;
+		if (czas==0) czas=9999;
+		if (czas) {
+			localStorage.setItem('czas',czas);
+			location.reload();
+		}
+	}
+	
+
+	function zaznacz_czas() {
+		var teraz = new Date();
+		var mteraz=Date.parse(teraz);
+		localStorage.setItem('last',mteraz);
+		location.reload();
+	}
+	
+	function kasuj_czas() {
+		localStorage.removeItem('last');
+		location.reload();
+	}
+
+	
+	// popup 	open
+	function popup_open(ten) {
+		var title=ten.getAttribute('rel-title');
+		var link=ten.getAttribute('rel-link');
+		var lokalizacja=ten.getAttribute('rel-lokalizacja');
+		var sekcja=ten.getAttribute('rel-sekcja');
+		
+		var	html_btn ='<div class="well">';
+			html_btn+='<a href="javascript:void(0)" class="btn btn-inverse" onClick="zapisz_LS_link(this);" id="popup_zapisz_LS_link">Zapisz link</a> ';
+			html_btn+='</div>';
+		document.getElementById('popup_body').innerHTML=html_btn;
+		document.getElementById('popup').style.display='block';
+		document.getElementById('popup_title').innerHTML=title;
+		document.getElementById('popup_zapisz_LS_link').setAttribute('rel-title',title);
+		document.getElementById('popup_zapisz_LS_link').setAttribute('rel-link',link);
+		document.getElementById('popup_zapisz_link').setAttribute('rel-title',title);
+		document.getElementById('popup_zapisz_link').setAttribute('rel-link',link);
+		document.getElementById('popup_zapisz_link').setAttribute('rel-lokalizacja',lokalizacja);
+		document.getElementById('popup_zapisz_link').setAttribute('rel-sekcja',sekcja);
+		//document.getElementById('popup_info').innerText='Mobile='+mobile+' | '+navigator.userAgent.toLowerCase();
+
+	}
+	// popup 	close
+	function popup_close() {
+		document.getElementById('popup').style.display='none';
+	}
+	
+	// popup	zapisz link
+	function zapisz_link(ten) {
+		var title=ten.getAttribute('rel-title');
+		var url=ten.getAttribute('rel-link');
+		var lokalizacja=ten.getAttribute('rel-lokalizacja');
+		var sekcja=ten.getAttribute('rel-sekcja');
+		var xurl='http://zszczech.zut.edu.pl/rss/_/ajax_zapisz.php?s='+sekcja+'&l='+lokalizacja+'&t='+title+'&u='+url;
+		loadXMLDoc(xurl,'popup_info')
+		popup_close();
+		zapiszLSlinki(title,url);
+	}
+	function zapisz_LS_link(ten) {
+		var title=ten.getAttribute('rel-title');
+		var url=ten.getAttribute('rel-link');
+		popup_close();
+		zapiszLSlinki(title,url);
+	}	
+
+//if (last) $('#zaznacz_czas').addClass('active'); else $('#kasuj_czas').addClass('active');
+	function zapiszLSlinki(title,link){
+		var max_links=14;
+		var get_linki=localStorage.getItem('_rss_linki');
+		if (get_linki) {
+			var arr=JSON.parse(get_linki);
+			var ile=arr.length;
+			if (ile>max_links) {arr.shift();arr.shift();}
+			} else arr=[];
+		var store_linki=arr;	
+		arr.push({'title':title, 'link':link})
+		store_linki=JSON.stringify(store_linki);
+		localStorage.setItem('_rss_linki',store_linki);
+	}
+	
+	function viewLSlinki(){
+		var get_linki = localStorage.getItem('_rss_linki');
+		var arr=JSON.parse(get_linki);
+		if (!arr) return false;
+		var html='<ol>';
+		arr.reverse();
+		for(var i in arr) {
+			html+='<li><a href="'+arr[i].link+'">'+arr[i].title+'</a></li>';
+		}
+		html+='</ol>';
+		document.getElementById('popup').style.display='block';
+		document.getElementById('popup_title').innerHTML='Lokalne linki';
+		document.getElementById('popup_body').innerHTML=html;
+	}
+	
+
+	function viewInfoKorki(raw){
+		document.getElementById('popup_info').innerHTML=raw;
+	}
+
+	function viewInfo(){
+		var html='<div class="auto">';
+			html+='<img src="http://www.yr.no/place/Poland/West_Pomerania/Szczecin~7530840/avansert_meteogram.png" /><br />';
+		html+='</div>';
+		document.getElementById('popup').style.display='block';
+		document.getElementById('popup_title').innerHTML='Info';
+		document.getElementById('popup_body').innerHTML=html;
+		
+var script=document.createElement('SCRIPT');
+script.type='text/javascript';
+script.src='http://www.wi.zut.edu.pl/cdn/json/korki.json.php?callback=viewInfoKorki&co=czas&jak=tabela&format=joomla';
+document.getElementsByTagName('head')[0].appendChild(script);
+	}
+	
+	function viewConfig(){
+		var font = localStorage.getItem('_font_');
+		var font_size = localStorage.getItem('_font_size_');
+		//console.log(font_size+' '+font);
+		var ff=[];
+		var fs=[];
+		ff[font]='active';
+		fs[font_size]='active';
+		//console.log(ff);
+		//console.log(fs);
+		
+		var html='';
+		html+='<div>';
+		html+='<b>Font-family: </b>';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+ff['Arial']+'" onClick="configFont(\'\',\'\');">Arial</a> ';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+ff['Georgia']+'" onClick="configFont(\'Georgia\',\'\');">Georgia</a> ';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+ff['PT Sans Narrow']+'" onClick="configFont(\'PT Sans Narrow\',\'\');">PT Sans Narrow</a> ';
+		html+='<hr />';
+		html+='<b>Font-size: </b>';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+fs[14]+'" onClick="configFont(\'*\',\'14\');">14</a> ';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+fs[15]+'" onClick="configFont(\'*\',\'15\');">15</a> ';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+fs[16]+'" onClick="configFont(\'*\',\'16\');">16</a> ';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+fs[17]+'" onClick="configFont(\'*\',\'17\');">17</a> ';
+		html+='<a href="javascript:void(0)" class="btn btn-info '+fs[18]+'" onClick="configFont(\'*\',\'18\');">18</a> ';
+		html+=' px</div>';
+		document.getElementById('popup').style.display='block';
+		document.getElementById('popup_title').innerHTML='Config';
+		document.getElementById('popup_body').innerHTML=html;
+		document.getElementById('popup_info').innerText='Ustaw font i jego rozmiar.';
+	}
+
+	function configFont(font,size){
+		if (!font) font='Arial';
+		//if (!size) size=15;
+		if (font != '*') {
+			//if (!font) localStorage.removeItem('_font_');
+			if (font)  localStorage.setItem('_font_',font);
+		}
+		if (size) {localStorage.setItem('_font_size_',size);}
+		location.reload();
+	}
+	
+	
+	window.onload=function(){
+	goStart();
+		//console.log(navigator.userAgent.toLowerCase());
+		feedcontainer=document.getElementById("feeddiv");
+		var id = get_uri_param('id');
+		opisz_menu(id);
+		rssfeedsetup(id);
+		document.getElementById(godzinClass).style.color="black";
+		document.getElementById(godzinClass).style.background="#e4e4e0";
+	ustalCzas();
+	}	
+
+	function goStart(){
+		var font = localStorage.getItem('_font_');
+		var font_size = localStorage.getItem('_font_size_');
+		mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+		if (!mobile){
+			var sheet1 = document.createElement('style')
+			sheet1.innerHTML = '.grid3 .col {width: 30.15%; margin-left: 20px;} .grid3 .col:nth-of-type(2n+1) {margin-left: 20px;clear: none;} .grid3 .col:nth-of-type(3n+1) {margin-left:20px;}';
+			document.body.appendChild(sheet1);
+			}
+		if (font){
+			var sheet2 = document.createElement('style');
+			var styl2='';
+			if (font=='PT Sans Narrow') styl2+='@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,latin-ext);'+"\n";
+			styl2+='body{font-family:"'+font+'"}'+"\n";
+			sheet2.innerHTML = styl2;
+			document.body.appendChild(sheet2);
+			//<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+			//var mySheet = document.stylesheets[0];
+			//console.log(mySheet);
+			}
+		if (font_size){
+			var sheet3 = document.createElement('style');
+			sheet3.innerHTML = 'body {font-size:'+font_size+'px;}';
+			document.body.appendChild(sheet3);			
+			}
+	
+		
+	}
+	
+function ustalCzas(){
+	var t = new Date(); 
+	var d = new Date(); 
+	d.setTime(last);
+	var delta=t-d;
+	
+	var sek=delta/1000;
+	var min_=Math.round(sek/60);
+	var god_=Math.round(min/60);
+	var min=min_-(god*60);
+	//console.log(delta+' sek='+sek+' min='+min+' godz='+god);
+	var god=Math.round((min_+15)/60);
+	var god=Math.min(god,godzin);
+	
+	//if (last)   innerinfo+=' '+toDate(d,' &nbsp; ');
+	//if (last)   {if (god) innerinfo+=god+'h'; else innerinfo+=min+'min.';}
+	//else if (godzin) innerinfo+=godzin+'h';
+	var innerinfo='od: ';
+	if (god) innerinfo+=god+'h'; else innerinfo+=min_+'min.';
+	document.getElementById('informacje').innerHTML='<a href="#" class="btn" id="zaznacz_czas" onClick="zaznacz_czas();">'+innerinfo+'</a>';
+
+}	
+	
+</script>	
+
+</head> 
+
+<body> 
+	<div class="wrapper fullwidth">
+		<div id="menu"></div>
+	</div>
+	
+	<div id="feeddiv" class="wrapper grid3">
+	</div>
+
+	<div class="batony">
+		<a href="#" onClick="ustawCzas(this);" rel="6"   class="h btn btn-small btn-inverse" id="h6"   title="do 6 godzin"> 6h </a> 
+		<a href="#" onClick="ustawCzas(this);" rel="12"  class="h btn btn-small btn-inverse" id="h12"  title="do 12 godzin"> 12h </a> 
+		<a href="#" onClick="ustawCzas(this);" rel="24"  class="h btn btn-small btn-inverse" id="h24"  title="ostatnia doba"> 1d </a> 
+		<a href="#" onClick="ustawCzas(this);" rel="72"  class="h btn btn-small btn-inverse" id="h72"  title="ostatnie 3 dni"> 3d </a> 
+		<a href="#" onClick="ustawCzas(this);" rel="168" class="h btn btn-small btn-inverse" id="h168" title="ostatni tydzień"> 7d </a>
+		<a href="#" onClick="ustawCzas(this);" rel="0"   class="h btn btn-small btn-inverse" id="h0"   title="infinity"> &infin; </a>
+	</div>	
+	
+	<div class="batony constant">
+		<span class="pull-right"><a href="#" class="btn btn-info btn-small">menu &#8657; top</a></span>
+		<a href="#" class="btn btn-primary" id="zaznacz_czas" onClick="zaznacz_czas();">Przeczytane</a>
+		<a href="#" class="btn btn-danger"  id="kasuj_czas"    onClick="kasuj_czas();">Wszystkie</a>
+
+		<a href="javascript:void(0)"  onClick="viewLSlinki();" class="btn btn-inverse">Last Links</a>
+		<a href="javascript:void(0)"  onClick="viewConfig();" class="btn btn-info">Config</a>
+<span class="btn"><a href="javascript:(
+function(){
+script=document.createElement('SCRIPT');
+script.type='text/javascript';
+script.src='http://www.wi.zut.edu.pl/cdn/json/korki.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+})();">{Korki}</a></span>		
+	</div>	
+	
+
+
+	<br />
+	<div id="popup">
+		<div id="popup_header"><h4 id="popup_title">Tytuł</h4> <a href="javascript:void(0)" class="btn btn-danger btn-small" onClick="popup_close();"> &nbsp; X &nbsp; </a></div>
+		<div id="popup_body">   
+			<a href="#" class="btn btn-primary" onClick="zapisz_link(this);" id="popup_zapisz_link">Zapisz link</a>
+		</div>
+		<div id="popup_info"></div>
+		<div id="popup_footer"> <a href="javascript:void(0)" class="btn btn-danger btn-small"  onClick="popup_close();">Close</a></div>
+	</div>
+	
+<br /><br />
+</body>
+</html>
